@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Markdown-Scrapbox Converter",
+    "version": "1.0",
+    "description": "Convert between Markdown and Scrapbox formats",
+    "icons": {
+        "16": "icons/icon16.png",
+        "512": "icons/icon512.png"
+    },
+    "action": {
+        "default_title": "Markdown-Scrapbox Converter",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "512": "icons/icon512.png"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "tabs"
+    ]
+}

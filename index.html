@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown to Scrapbox Converter</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="editor-container">
+            <div class="editor-half">
+                <div class="header">
+                    <h2>Markdown</h2>
+                    <div class="button-group">
+                        <button class="icon-button copy-button" data-target="markdown-editor" title="コピー">
+                            <span class="material-icons">content_copy</span>
+                        </button>
+                        <button class="icon-button clear-button" data-target="markdown-editor" title="クリア">
+                            <span class="material-icons">delete_sweep</span>
+                        </button>
+                    </div>
+                </div>
+                <textarea id="markdown-editor" placeholder="Markdownテキストを入力してください"></textarea>
+            </div>
+            <div class="editor-half">
+                <div class="header">
+                    <h2>Scrapbox</h2>
+                    <div class="button-group">
+                        <button class="icon-button copy-button" data-target="scrapbox-editor" title="コピー">
+                            <span class="material-icons">content_copy</span>
+                        </button>
+                        <button class="icon-button clear-button" data-target="scrapbox-editor" title="クリア">
+                            <span class="material-icons">delete_sweep</span>
+                        </button>
+                    </div>
+                </div>
+                <textarea id="scrapbox-editor" placeholder="Scrapboxテキストを入力してください"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
